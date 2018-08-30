@@ -1,0 +1,4 @@
+<textarea [(ngModel)]="html_code"></textarea>
+<textarea [(ngModel)]="cssyle"></textarea>
+<textarea [(ngModel)]="javascript_code"></textarea>
+<iframe height="200px" width="200px" [srcdoc]="html_code + '<style>' + cssyle + '</style>' + '<script>' + javascript_code + '</script>' | noSanitization" ></iframe>
